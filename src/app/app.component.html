@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div class="container" [hidden]="!api.isAuthSynced">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="top-right-alert">
+  <!--<alert type="success" dismissOnTimeout="5000" dismissible="true">
+    <strong>Well done!</strong> You successfully read this important alert message.
+  </alert>-->
+  <div *ngFor="let alert of admin.alerts; let i = index;">
+    <alert [type]="alert.type" [dismissOnTimeout]="alert.timeout" dismissible="true">{{ alert.msg }}</alert>
+  </div>
+</div>

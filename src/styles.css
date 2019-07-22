@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+.text-left {
+  text-align: left!important;
+}
+.text-right {
+  text-align: right;
+}
+
+.text-color-red {
+  color: red;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a.disabled {
+  color: #CCC !important;
+  cursor: default;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.tab-content {
+  margin-top: 10px;
+}
+
+.inline-input {
+  display: inline-block;
+  width: auto;
+}
+
+.top-right-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999999999;
+}
